@@ -24,14 +24,8 @@ npm install
 
 ```
 ## Project Structure
-src/
-  └── component/
-        └── [Clipboard.tsx](http://_vscodecontentref_/0)   # Main clipboard copy component
-  └── App.tsx               # App entry
-  └── main.tsx              # React root
-  └── index.css             # Global styles
-public/
-  └── vite.svg              # App icon
+
+src/ └── component/ └── Clipboard.tsx # Main clipboard copy component └── App.tsx # App entry point └── main.tsx # React root file └── index.css # Global styles public/ └── vite.svg # App icon
 
 ```
 ```
