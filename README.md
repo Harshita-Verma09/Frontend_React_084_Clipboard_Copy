@@ -1,69 +1,41 @@
-# React + TypeScript + Vite
+#  React Clipboard Copy Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a modern React + TypeScript + Vite application that demonstrates how to copy a long paragraph of React notes to the clipboard with a single click. The app features a clean, dark-themed UI and instant feedback when copying.
 
-Currently, two official plugins are available:
+##  Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Copy 20 lines of React notes to clipboard
+- "Copied!" feedback message
+- Responsive and attractive design
+- Built with React 19, TypeScript, and Vite
 
-## Expanding the ESLint configuration
+##  Preview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![App Screenshot](public/vite.svg)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+##  Installation
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Clone the repository and install dependencies:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```sh
+git clone https://github.com/your-username/clipboard-copy-demo.git
+cd clipboard-copy-demo
+npm install
+
 ```
+## Project Structure
+src/
+  └── component/
+        └── [Clipboard.tsx](http://_vscodecontentref_/0)   # Main clipboard copy component
+  └── App.tsx               # App entry
+  └── main.tsx              # React root
+  └── index.css             # Global styles
+public/
+  └── vite.svg              # App icon
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+```
+## Credits
+  React
+  Vite
+  TypeScript
