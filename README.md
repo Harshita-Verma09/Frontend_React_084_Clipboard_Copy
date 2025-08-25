@@ -1,4 +1,4 @@
-#  React Clipboard Copy Demo
+#  React Clipboard Copy Demo.
 
 This project is a modern React + TypeScript + Vite application that demonstrates how to copy a long paragraph of React notes to the clipboard with a single click. The app features a clean, dark-themed UI and instant feedback when copying.
 
